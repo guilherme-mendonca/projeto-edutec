@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto-de-fundo: #000000;
+    --laranja-claro: #F0831F;
+    --laranja-escuro: #F05E1F;
+    --cinza: #262626;
+    --branco: #fff;
+}
+
+.galeria {
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.galeria img {
+    max-width: 150px;
+    cursor: pointer;
+    border: 2px solid var(--laranja-escuro);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(2.1);
+}
+
+/* O Modal (fundo) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 1vh;
+    top: 25vh;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Conteúdo (Imagem) */
+.modal-conteudo {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Fechar o Modal */
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--branco);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: var(--laranja-claro);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--laranja-escuro);
+    color: var(--branco);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    max-width: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--laranja-escuro);
+}
+
+body {
+    padding: 1.75rem 1rem;
+    background-color: var(--preto-de-fundo);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+header ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 3rem;
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+header ul li a:hover {
+    color: var(--laranja-claro);
+    transition: 300ms;
+}
+
+h2 {
+    color: var(--laranja-escuro);
+    padding: 0.5rem;
+    margin-top: 2rem;
+    font-size: 25px;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mapas {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre as imagens */
+}
+
+.mapas section {
+    flex-basis: calc(50%);
+    /* Ajusta a largura das seções para 50% menos o gap */
+    display: flex;
+    justify-content: center;
+    /* Centraliza as imagens dentro das seções */
+}
+
+.mapas img {
+    max-width: 100%;
+    /* Garante que as imagens não excedam o tamanho do contêiner */
+    height: auto;
+    border-radius: 31px;
+    cursor: pointer;
+}
+
+@media(min-width: 1100px) {
+    .mapas section {
+        flex-basis: calc(33.33% - 20px);
+        /*Para lembrar que nao quero ser front-end  */
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    header ul li a {
+        font-size: 1.25rem;
+    }
+
+    .download-btn {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        padding-top: 100px;
+        left: 1vh;
+        top: 15vh;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .fechar {
+        position: absolute;
+        top: 15px;
+        right: 20rem;
+        color: var(--branco);
+        font-size: 80px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .mapas {
+        margin-top: 3rem;
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        gap: 25px;
+        /* Espaçamento entre as imagens */
+    }
+}

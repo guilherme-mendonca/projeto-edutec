@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+}
+
+:root {
+    --preto-de-fundo: #000000;
+    --laranja-claro: #F0831F;
+    --laranja-escuro: #F05E1F;
+    --cinza: #262626;
+    --branco: #fff;
+}
+
+body {
+    background-color: var(--preto-de-fundo);
+    background-image: url(../../assets/images/atomo-fundo.png);
+    background-position: right -140px top;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    color: var(--branco);
+    margin-top: 15rem;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 360px;
+}
+
+header {
+    width: 100%;
+    padding: 40px 6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+div {
+    background-image: url(../../assets/images/tela-quiz.png);
+    background-size: cover;
+    background-color: var(--branco);
+    width: 510px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 17px;
+    margin: -4rem 0 0rem 6rem;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--laranja-escuro);
+}
+
+span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--laranja-escuro);
+}
+
+button {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--laranja-escuro);
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3.20rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 200ms;
+    transform: scale(1.2);
+}

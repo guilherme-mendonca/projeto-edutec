@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --preto-de-fundo: #000000;
+    --laranja-claro: #F0831F;
+    --laranja-escuro: #F05E1F;
+    --cinza: #262626;
+    --branco: #fff;
+}
+
+body {
+    background-color: var(--preto-de-fundo);
+    color: var(--branco);
+    margin-top: 15rem;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 60px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 300ms;
+    z-index: 999;
+}
+
+header.rolagem {
+    background-color: var(--laranja-claro);
+    padding: 9px 2%;
+}
+
+header .logo {
+    margin-left: -2.5rem;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+header ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 3rem;
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+section {
+    height: 100vh;
+    background-image: url(./assets/images/atomo-fundo.png);
+    background-position: right -69px;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-size: contain;
+    display: flex;
+    justify-self: end;
+}
+
+.titulo-home {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+    margin-top: 4rem;
+}
+
+.introducao>div {
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+
+.titulo-home a {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--laranja-escuro);
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3.20rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo-home h1 {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 85px;
+    color: var(--laranja-escuro);
+}
+
+.titulo-home span {
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introducao {
+    background-image: none;
+    width: 91%;
+    background-color: var(--cinza);
+    margin: 1rem 9rem 0rem 5rem;
+    margin: 4rem 5rem;
+    /* height: 200%; */
+    max-height: 200%;
+    max-width: 100%;
+}
+
+.introducao h2 {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 75px;
+}
+
+.introducao p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+.introducao a {
+    display: inline-flex;
+    margin-top: 4rem;
+    margin: 4rem 3.45rem 0rem -0.20rem;
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--laranja-claro);
+    border-radius: 67px;
+    width: 13rem;
+    height: 3.20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.atom-introducao img {
+    margin-right: 5rem;
+}
+
+.modelos {
+    background-image: none;
+    width: 91%;
+    background-color: var(--cinza);
+    margin: 10rem 5rem 0rem 5rem;
+    margin: 3rem 5rem;
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 91%;
+}
+
+.modelos h2 {
+    margin-top: 4rem;
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 75px;
+}
+
+.modelos span {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--laranja-escuro);
+}
+
+
+.secao1 {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+
+}
+
+.secao2 {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.conteudo-impar {
+    background-image: none;
+    width: 91%;
+    background-color: var(--cinza);
+    margin: 10rem 5rem 0rem 5rem;
+    max-height: 100%;
+    max-width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.conteudo-impar h2 {
+    margin-left: 36.6rem;
+    margin-top: 4rem;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 75px;
+    color: var(--laranja-escuro);
+}
+
+.conteudo-impar p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-left: 37rem;
+    margin-right: 8rem;
+}
+
+.conteudo-par {
+    background-image: none;
+    width: 91%;
+    background-color: var(--cinza);
+    margin: 10rem 5rem 0rem 5rem;
+    max-height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    width: 91%;
+}
+
+.conteudo-par h2 {
+    margin-left: 5.7rem;
+    margin-top: 4rem;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 75px;
+    color: var(--branco);
+}
+
+.conteudo-par p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 42rem;
+}
+
+.conteudo-impar>img {
+    width: 35%;
+    margin-left: 3.5rem;
+    margin-top: -25.9rem;
+}
+
+.conteudo-par>img {
+    width: 35%;
+    margin-left: 54rem;
+    margin-top: -27.5rem;
+}
+
+#foto-rutherford {
+    width: 33%;
+    margin-left: 3.9rem;
+    margin-top: -28.9rem;
+}
+
+#foto-bohr {
+    width: 32%;
+    margin-left: 60rem;
+    margin-top: -25.8rem;
+}
+
+#foto-schrodinger {
+    width: 30%;
+    margin-left: 4.9rem;
+}
+
+#foto-moderno {
+    width: 35%;
+    margin-left: 51rem;
+    margin-top: -21.8rem;
+}
+
+#texto-moderno {
+    margin-right: 50rem;
+    margin-left: 6rem;
+}
+
+.linha-branca {
+    margin-left: 10rem;
+    height: 160px;
+    position: absolute;
+}
+
+.linha-laranja {
+    margin-left: 92rem;
+    height: 160px;
+    position: absolute;
+}

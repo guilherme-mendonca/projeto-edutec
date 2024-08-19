@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mapaMental.css">
+    <script src="mapaMental.js"></script>
+    <title>Mapa Mental</title>
+</head>
+
+<body>
+    <header id="header" class="rolagem">
+
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="../index.html" class="logo"><img src="../assets/images/logo-atom.png" alt="Logomarca Atom"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../paginas/inicio/quiz-inicio.html">Quiz</a></li>
+                        <li><a href="../paginas/videoaulas.html">Videos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <h2>Modelos Atômicos</h2>
+
+        <section class="mapas">
+            <section>
+                <img class="primeira" onclick="abrirModal(this)"
+                    src="https://files.passeidireto.com/75862da6-2290-42ec-b78c-aba5716d18b8/75862da6-2290-42ec-b78c-aba5716d18b8.jpeg" alt="">
+            </section>
+            <section>
+                <img class="segunda" onclick="abrirModal(this)" src="../assets/images/mapa-mental2.jpeg" alt="">
+            </section>
+            <section>
+                <img class="terceira" onclick="abrirModal(this)" src="../assets/images/mapa-mental3.jpeg" alt="">
+            </section>
+            <section>
+                <img class="quarta" onclick="abrirModal(this)" src="../assets/images/mapa-mental4.jpeg" alt="">
+            </section>
+            <section>
+                <img class="quinta" onclick="abrirModal(this)" src="../assets/images/mapa-mental5.jpg" alt="">
+            </section>
+            <section>
+                <img class="sexta" onclick="abrirModal(this)" src="../assets/images/thomsomMapamental.webp" alt="">
+            </section>
+            
+        </section>
+
+        <div id="modal" class="modal">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <img class="modal-conteudo" id="imagem-grande">
+            <a id="download-btn" href="" download class="download-btn">Baixar Imagem</a>
+            <div id="descricao"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+{
+    "quizzes": [
+        {
+            "title": "Modelos Atômicos",
+            "icon": "../../assets/images/icon-html.svg",
+            "questions": [
+                {
+                    "question": "Qual das seguintes afirmações sobre os átomos é verdadeira?",
+                    "options": [
+                        "Os átomos são as partículas mais pequenas de matéria que existem.",
+                        "Os átomos são constituídos apenas por prótons.",
+                        "Os átomos são sempre carregados negativamente."
+                    ],
+                    "answer": "Os átomos são as partículas mais pequenas de matéria que existem."
+                },
+                {
+                    "question": "Qual das seguintes partículas não está presente no núcleo de um átomo?",
+                    "options": [
+                        "Prótons",
+                        "Nêutrons",
+                        "Elétrons"
+                    ],
+                    "answer": "Elétrons"
+                },
+                {
+                    "question": "Qual é a carga elétrica de um elétron?",
+                    "options": [
+                        "Neutra",
+                        "Positiva",
+                        "Negativa"
+                    ],
+                    "answer": "Negativa"
+                },
+                {
+                    "question": "Quem propôs que os átomos são indivisíveis e não podem ser quebrados em partes menores?",
+                    "options": [
+                        "Demócrito",
+                        "Aristóteles",
+                        "Dalton"
+                    ],
+                    "answer": "Demócrito"
+                },
+                {
+                    "question": "Qual é a massa aproximada de um próton, em unidades de massa atômica (u)?",
+                    "options": [
+                        "1/1836u",
+                        "1836u",
+                        "1u"
+                    ],
+                    "answer": "1u"
+                },
+                {
+                    "question": "Qual dos seguintes não é um exemplo de um elemento químico?",
+                    "options": [
+                        "Água",
+                        "Hélio",
+                        "Carbono"
+                    ],
+                    "answer": "Água"
+                },
+                {
+                    "question": "O número atômico de um átomo é igual ao número de:",
+                    "options": [
+                        "Elétrons",
+                        "Prótons",
+                        "Quarks"
+                    ],
+                    "answer": "Prótons"
+                },
+                {
+                    "question": "Qual é a carga elétrica de um próton?",
+                    "options": [
+                        "Negativa",
+                        "Positiva",
+                        "Neutra"
+                    ],
+                    "answer": "Positiva"
+                },
+                {
+                    "question": "Qual dos seguintes subníveis de energia não existe?",
+                    "options": [
+                        "s",
+                        "d",
+                        "f"
+                    ],
+                    "answer": "f"
+                },
+                {
+                    "question": "Qual é a unidade de massa atômica (u) usada para expressar a massa dos átomos?",
+                    "options": [
+                        "Dalton (Da)",
+                        "Newton (N)",
+                        "Pascal (Pa)"
+                    ],
+                    "answer": "Dalton (Da)"
+                }
+            ]
+        }
+    ]
+}

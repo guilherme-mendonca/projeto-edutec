@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="videoaulas.css">
+    <script src="./videoaulas.js" defer></script>
+    <title>Video</title>
+</head>
+
+<body>
+    <header id="header" class="rolagem">
+
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="../index.html" class="logo"><img src="../assets/images/logo-atom.png" alt="Logomarca Atom"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../paginas/inicio/quiz-inicio.html">Quiz</a></li>
+                        <li><a href="../paginas/mapaMental.html">Mapas Mentais</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="videos">
+            <section>
+                <img class="primeira" onclick="abrirMiniplayer('https://www.youtube.com/watch?v=5-fa4IKp5bU')" src="../assets/images/todaMateria.png" alt="">
+                <p>Descomplica</p>
+            </section>
+            <section>
+                <img class="segunda" onclick="abrirMiniplayer('https://youtu.be/fDeZTaClNRY?si=NjukDNrnDeN1zKj7')" src="../assets/images/canalFutura.png" alt="">
+                <p>Toda Matéria</p>
+            </section>
+            <section>
+                <img class="terceira" onclick="abrirMiniplayer('https://www.youtube.com/watch?v=lDrKIqubzdw')" src="../assets/images/descomplica.png" alt="">
+                <p>Gabriel Cabral</p>
+            </section>
+            <section>
+                <img class="quarta" onclick="abrirMiniplayer('https://www.youtube.com/watch?v=dAFTFesEjKQ')" src="../assets/images/cabral.png" alt="">
+                <p>Brasil Escola</p>
+            </section>
+            <section>
+                <img class="quinta" onclick="abrirMiniplayer('https://www.youtube.com/watch?v=GVoZ3WERohA')" src="../assets/images/escolaAnimada.png" alt="">
+                <p>Escola Animada</p>
+            </section>
+            <section>
+                <img class="sexta" onclick="abrirMiniplayer('https://www.youtube.com/watch?v=pXQyG1m8fPk')" src="../assets/images/brasilEscola.png" alt="">
+                <p>Canal Futura</p>
+            </section>
+        </section>
+
+        <div class="miniplayer" id="miniplayer">
+            <span class="close-btn" onclick="fecharMiniplayer()">&times;</span>
+            <iframe id="miniplayer-video" src="" allowfullscreen></iframe>
+            <a id="abrir-em-nova-guia" href="" target="_blank" class="open-new-tab">Abrir em nova guia</a>
+        </div>
+    </main>
+</body>
+</html>
