@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="./cadastro.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../../assets/images/logo-atom.png" alt="Logomarca Atom"></a>
+    </header>
+
+    <div class="card-cadastro">
+        <h1>Faça seu cadastro</h1>
+
+        <label for="name">Nome</label>
+        <div id="email">
+            <input id="name" class="input" type="text" name="name" placeholder="Digite seu nome">
+        </div>
+            
+        <label for="password">Senha</label>
+        <div>
+            <input id="password" class="input" type="password" name="password" placeholder="Digite sua senha">
+        </div>
+            
+        <label for="confirmationPassword">Confirmação da senha</label>
+        <div>
+            <input class="input" type="password" id="confirmationPassword" name="confirmationPassword" placeholder="Confirme sua senha">
+        </div>
+
+        <div class="lembrar" id="checkbox">
+            <input type="checkbox" id="lembrar">
+            <label for="lembrar" id="lembrar-label">Me lembre</label>
+        </div>
+            
+        <button class="botao-cadastro">Cadastro</button>
+        <span class="login">Possui Conta? <a href="../login/login.html">Login</a></span>
+    </div>
+</body>
+</html>

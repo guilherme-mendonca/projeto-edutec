@@ -1,3 +1,10 @@
+import { verifyToken } from "../../utils/verify-token.js"
+
+const url = "../login/login.html"
+
+verifyToken(url)
+
+
 let quiz = {}
 let pontos = 0
 let pergunta = 1
@@ -21,22 +28,22 @@ function montarPergunta() {
     main.innerHTML = `
                 <div class="caixa">
             <p> ${pergunta}/10</p>
-            <h2>${quiz.questions[pergunta-1].question}</h2>
+            <h2>${quiz.questions[pergunta - 1].question}</h2>
 
             <div class="alternativas">
                 <label for="alternativa_a">
-                    <input type="radio" name="value_radio" id="alternativa_a" value="${quiz.questions[pergunta-1].options[0]}">    
-                    ${quiz.questions[pergunta-1].options[0]}
+                    <input type="radio" name="value_radio" id="alternativa_a" value="${quiz.questions[pergunta - 1].options[0]}">    
+                    ${quiz.questions[pergunta - 1].options[0]}
                 </label>
                 
                 <label for="alternativa_b">
-                    <input type="radio" name="value_radio" id="alternativa_b" value="${quiz.questions[pergunta-1].options[1]}">
-                    ${quiz.questions[pergunta-1].options[1]}
+                    <input type="radio" name="value_radio" id="alternativa_b" value="${quiz.questions[pergunta - 1].options[1]}">
+                    ${quiz.questions[pergunta - 1].options[1]}
                 </label>
 
                 <label for="alternativa_c">
-                    <input type="radio" name="value_radio" id="alternativa_c" value="${quiz.questions[pergunta-1].options[2]}">
-                    ${quiz.questions[pergunta-1].options[2]}
+                    <input type="radio" name="value_radio" id="alternativa_c" value="${quiz.questions[pergunta - 1].options[2]}">
+                    ${quiz.questions[pergunta - 1].options[2]}
                 </label>
             </div>
 
@@ -103,6 +110,29 @@ function finalizar() {
 
     window.location.href = "../resultado/quiz-resultado.html"
 }
+
+//sei um pouco, copiei do benones e modifiquei algumas coisas
+//Envia a pontuação para o back-end
+try {
+    const response = await fetch("http://localhost:3000/save-score", {
+        method: "POST", // Método HTTP POST para envio de dados
+        headers: {
+            "Content-Type": "application/json", // Cabeçalho indicando JSON
+            "Authorization": token // Cabeçalho de autorização com token JWT
+        },
+        body: JSON.stringify({ pontos }) // Corpo da requisição com a pontuação do usuário
+    });
+
+    // Verifica se a pontuação foi salva com sucesso
+    if (response.ok) {
+        alert("Pontuação salva com sucesso!");
+    } else {
+        alert("Erro ao salvar a pontuação!");
+    }
+} catch (error) {
+    console.error("Erro:", error); // Exibe erros no console
+}
+
 
 function proximaPergunta() {
     montarPergunta()

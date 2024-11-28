@@ -48,7 +48,7 @@ header.rolagem {
 }
 
 header .logo {
-    margin-left: -2.5rem;
+    margin-left: 1.5rem;
 }
 
 header ul {
@@ -70,6 +70,40 @@ header ul li a {
     line-height: 3rem;
     font-size: 1rem;
     color: var(--branco);
+}
+
+.flex p {
+    justify-content: flex-end;
+    margin-left: 8rem;
+}
+
+header p {
+    font-family: "Yeseva One", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 100;
+    line-height: 3rem;
+    color: var(--branco);
+}
+
+header button {
+    /* margin-right: 1rem; */
+    font-size: 20px;
+    color: var(--branco);
+    background-color: var(--laranja-claro);
+    border-radius: 67px;
+    border: 2px solid var(--branco);
+    width: 8rem;
+    height: 3rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--branco);
+    color: var(--laranja-claro);
+    transition: 0.3s;
 }
 
 section {
@@ -199,7 +233,6 @@ section {
     color: var(--laranja-escuro);
 }
 
-
 .secao1 {
     display: flex;
     gap: 2rem;
@@ -215,6 +248,10 @@ section {
     font-family: "Montserrat", sans-serif;
     font-size: 35px;
     font-weight: 700;
+}
+
+section .conteudo-par, .conteudo-impar {
+    display: flex;
 }
 
 .conteudo-impar {

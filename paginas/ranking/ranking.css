@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+}
+
+:root {
+    --preto-de-fundo: #000000;
+    --laranja-escuro: #F05E1F;
+    --laranja-claro: #F0831F;
+    --branco: #fff;
+}
+
+body {
+    background-color: var(--preto-de-fundo);
+    background-image: url(../../assets/images/atomo-fundo.png);
+    background-repeat: no-repeat;
+    background-position: 150px 503px;
+    background-size: 30%;
+    color: var(--branco);
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 100%; */
+}
+
+header {
+    width: 100%;
+    padding: 40px 6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* .card-rank {
+    background-image: url(../../assets/images/fundo-rank.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 3px solid var(--branco);
+    
+    color: var(--laranja-escuro);
+    width: 670px;
+    height: 395px;
+    max-width: 693px; 
+    padding-top: 3.3rem;
+    text-align: center;
+} */
+
+h1 {
+    margin-top: -25px;
+}
+
+.nome {
+    display: inline;
+}
+
+.pontos {
+    display: inline;
+    padding-left: 400px;
+}
+
+li {
+    /* position: static; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20rem;
+}
+
+ul > img {
+   width: 580px;
+}
+
+li > p{
+    text-align: left;
+    margin-left: 72px;
+    width: 100%;
+}
+
+span {
+    display: inline;
+    position: fixed;
+    padding-left: 450px;
+}

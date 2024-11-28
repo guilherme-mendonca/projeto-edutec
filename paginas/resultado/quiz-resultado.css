@@ -86,6 +86,24 @@ button {
     border: none;
 }
 
+.rank {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--laranja-escuro);
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3.20rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+}
+
 button:hover {
     cursor: pointer;
     transition: 200ms;

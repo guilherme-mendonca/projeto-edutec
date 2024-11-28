@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+}
+
+:root {
+    --preto-de-fundo: #000000;
+    --laranja-escuro: #F05E1F;
+    --laranja-claro: #F0831F;
+    --branco: #fff;
+}
+
+body {
+    background-color: var(--preto-de-fundo);
+    background-image: url(../../assets/images/atomo-fundo.png);
+    background-position: right 1300px bottom;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    color: var(--branco);
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 40px 6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.card-login {
+    margin-top: -12.6rem;
+    background-image: url(../../assets/images/tela-quiz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--preto-de-fundo);
+    width: 510px;
+    height: 582px;
+    max-width: 693px; /* Limita o tamanho máximo do card em telas grandes */
+    padding-top: 3.3rem;
+    text-align: center;
+}
+
+h1 {
+    color: var(--laranja-escuro);
+    padding-bottom: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+}
+
+.card-login > label {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding-bottom: 0.4rem;
+    padding-left: 4.6rem;
+}
+
+#nome {
+    margin-bottom: 1.7rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.4rem;
+    background: var(--branco);
+    border: 2px solid var(--laranja-claro);
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 11px;
+    width: 347px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+}
+
+#lembrar {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+}
+
+.lembrar {
+    margin-left: -22rem;
+    padding-top: 1rem;
+    padding-left: 6rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.lembrar > label {
+    cursor: pointer;
+}
+
+.botao-login {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--laranja-escuro);
+    border-radius: 67px;
+    display: block;
+    width: 13rem;
+    height: 3.20rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 8.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.cadastre {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.cadastre > a {
+    color: var(--laranja-escuro);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
