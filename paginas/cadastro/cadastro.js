@@ -20,7 +20,7 @@ async function register() {
         password,
     }
 
-    const response = await fetch("http://localhost:3000/register", { //Enviar o objeto user para o backend
+    const response = await fetch("https://projeto-edutec-backend.vercel.app/register", { //Enviar o objeto user para o backend
         method: "POST",
         headers: {
             "Content-Type": "application/json"

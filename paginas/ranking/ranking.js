@@ -11,7 +11,7 @@ async function fetchRanking() {
     try {
         const token = localStorage.getItem("token"); // Recupera o token do localStorage
 
-        const response = await fetch("http://localhost:3000/ranking", {
+        const response = await fetch("https://projeto-edutec-backend.vercel.app/ranking", {
             headers: { "Authorization": token }
         });
 

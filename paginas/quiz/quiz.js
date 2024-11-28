@@ -114,7 +114,7 @@ function finalizar() {
 //sei um pouco, copiei do benones e modifiquei algumas coisas
 //Envia a pontuação para o back-end
 try {
-    const response = await fetch("http://localhost:3000/save-score", {
+    const response = await fetch("https://projeto-edutec-backend.vercel.app/save-score", {
         method: "POST", // Método HTTP POST para envio de dados
         headers: {
             "Content-Type": "application/json", // Cabeçalho indicando JSON
